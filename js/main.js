@@ -1,5 +1,7 @@
 $(document).ready(function($) {
 	
+	// Navigation 
+
 	var pull = $("#navigation__toggle");
 	var nav = $("#navigation__items");
 
@@ -14,6 +16,17 @@ $(document).ready(function($) {
 		if(w > 992) {
 			nav.removeAttr('style');
 		}
+	});
+
+
+	//Slider
+	$("#top_slider").owlCarousel({
+	  	items: 1,
+	  	nav: true,
+	  	navText: [],
+	  	dots: true,
+	  	theme: "top-slider-theme",
+
 	});
 
 });
