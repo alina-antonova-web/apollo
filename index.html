@@ -32,8 +32,8 @@
 
 
 	<!-- Logo -->		
-	<div class="container">
-		<div class="logo" id="main">
+	<div class="container" id="main">
+		<div class="logo">
 			<div class="logo__name">Аполло 404</div>
 			<div class="logo__slogan">Хостинг компания</div>
 		</div>
@@ -49,10 +49,10 @@
 			<ul id="navigation__items">
 			  <li><a href="#main">Главная</a></li>
 			  <li><a href="#work">Как мы работаем</a></li>
-			  <li><a href="#">Фрилансерам</a></li>
-			  <li><a href="#">Стартапам</a></li>
-			  <li><a href="#">Тарифы</a></li>
-			  <li><a href="#">Контакты</a></li>
+			  <li><a href="#freelance">Фрилансерам</a></li>
+			  <li><a href="#startup">Стартапам</a></li>
+			  <li><a href="#prices">Тарифы</a></li>
+			  <li><a href="#contacts">Контакты</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -144,12 +144,14 @@
 	<!-- // Slider -->	
 
 	<!-- How we work -->		
-	<div class="container">
-		<div class="work-header" id="work">Как мы работаем</div>
+	<div class="container"  id="work">
+		<div class="work-header">Как мы работаем</div>
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-lg-3">
 				<div class="work-property">
-					<img class="work-property__img" src="img/images/weather.png" alt="">
+					<div class="work-property__img">
+						<img src="img/images/weather.png" alt="">
+					</div>					
 					<div class="work-property__title">Работаем в любую погоду</div>
 					<div class="work-property__description">
 					Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</div>
@@ -157,7 +159,9 @@
 			</div>
 			<div class="col-xs-12 col-sm-6  col-lg-3">
 				<div class="work-property">
-					<img class="work-property__img" src="img/images/graph.png" alt="">
+					<div class="work-property__img">
+						<img src="img/images/graph.png" alt="">
+					</div>
 					<div class="work-property__title">Используем нано-технологии</div>
 					<div class="work-property__description">
 					Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</div>
@@ -165,7 +169,9 @@
 			</div>
 			<div class="col-xs-12 col-sm-6  col-lg-3">
 				<div class="work-property">
-					<img class="work-property__img" src="img/images/flipchart.png" alt="">
+					<div class="work-property__img">
+						<img src="img/images/flipchart.png" alt="">
+					</div>
 					<div class="work-property__title">Cтандарты качества по ГОСТу</div>
 					<div class="work-property__description">
 					Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</div>
@@ -173,7 +179,9 @@
 			</div>
 			<div class="col-xs-12 col-sm-6  col-lg-3">
 				<div class="work-property">
-					<img class="work-property__img" src="img/images/presentation.png" alt="">
+					<div class="work-property__img">
+						<img src="img/images/presentation.png" alt="">
+					</div>
 					<div class="work-property__title">Стремительно развиваемся</div>
 					<div class="work-property__description">
 					Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</div>
@@ -186,7 +194,7 @@
 	<div class="line"></div>
 
 	<!-- Freelance Hosting -->		
-	<div class="container">
+	<div class="container" id="freelance">
 		<div class="row service">
 			<div class="col-sm-6 col-lg-5">
 				<img class="service-img" src="img/images/notebook.png" alt="">
@@ -199,7 +207,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 					</div>
-					<div class="service-info__button"></div>
+					<a class="service-info__button" href="#"></a>
 				</div>
 			</div>
 		</div>
@@ -209,7 +217,7 @@
 	<div class="line"></div>
 
 	<!-- Startup Hosting -->		
-	<div class="container">
+	<div class="container" id="startup">
 		<div class="row service">
 			<div class="col-sm-6 col-sm-push-6">
 				<img class="service-img" src="img/images/rocket.png" alt="">
@@ -221,8 +229,8 @@
 					<div class="service-info__text">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					</div>
-					<div class="service-info__button"></div>
+					</div>					
+					<a class="service-info__button" href="#"></a>
 				</div>
 			</div>
 		</div>
@@ -233,25 +241,96 @@
 
 
 	<!-- Prices -->			
-	<div class="container">
-		<div class="block">Тарифы и пакеты</div>
+	<div class="container" id="prices">
+		<div class="prices_header">
+			<h2>Тарифы и пакеты</h2>
+			<p>Everyone that enters through Him is always safe and the person shall find pastures for himself.</p>
+		</div>
 		<div class="row">
-			<div class="col-sm-4"><div class="block">Тариф 1</div></div>
-			<div class="col-sm-4"><div class="block">Тариф 2</div></div>
-			<div class="col-sm-4"><div class="block">Тариф 3</div></div>
+			<div class="col-sm-4">
+				<div class="price_info">
+					
+						<div class="price_info__name">Фриланс</div>
+						<div class="price_info__price">590</div>
+						<div class="price_info__period">оплата в месяц</div>
+						<ul class="price_info__benefits">
+							<li>10 GB Disk Space</li>
+							<li>5 Sub Domains</li>
+							<li>4 Databases</li>
+							<li>Unlimited Users</li>
+						</ul>
+						<a class="price_info__button" href="#">Начать</a>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="price_info">
+					
+						<div class="price_info__name">Стартап</div>
+						<div class="price_info__price">990</div>
+						<div class="price_info__period">оплата в месяц</div>
+						<ul class="price_info__benefits">
+							<li>100 GB Disk Space</li>
+							<li>100 Sub Domains</li>
+							<li>100 Databases</li>
+							<li>Unlimited Users</li>
+						</ul>
+						<a class="price_info__button--try" href="#">Попробовать</a>
+					
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="price_info--no-margin-bottom">
+					
+						<div class="price_info__name">highload</div>
+						<div class="price_info__price">~6900</div>
+						<div class="price_info__period">оплата в месяц</div>
+						<ul class="price_info__benefits">
+							<li>1000 GB Disk Space</li>
+							<li>~ Sub Domains</li>
+							<li>~ Databases</li>
+							<li>Unlimited Users</li>
+						</ul>
+						<a class="price_info__button" href="#">Начать</a>
+					
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- Prices -->
 
 
-	<div class="footer">
+	<div class="footer" id="contacts">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4 col-lg-3"><div class="block">Ячейка 1</div></div>
-				<div class="col-sm-4 col-lg-3"><div class="block">Ячейка 2</div></div>
-				<div class="col-sm-4 col-lg-3"><div class="block">Ячейка 3</div></div>
+				<div class="col-sm-4 col-lg-3 footer-menu">
+					<div class="footer-menu__titel">Продукт</div>
+					<ul class="footer-menu__list">
+						<li><a href="#">Business</a></li>
+						<li><a href="#">Compare</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Pricing</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-lg-3 footer-menu">
+					<div class="footer-menu__titel">о компании</div>
+					<ul class="footer-menu__list">
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Press Releases</a></li>
+						<li><a href="#">Jobs</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-lg-3 footer-menu">
+					<div class="footer-menu__titel">поддержка</div>
+					<ul class="footer-menu__list">
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Developers</a></li>
+						<li><a href="#">Customer Service</a></li>
+						<li><a href="#">Ger Started Guide</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="block">© Копирайт</div>
+			<div class="footer__copy">© 2017 Аполло 440. Все права защищены.</div>
 		</div>
 	</div>
 
