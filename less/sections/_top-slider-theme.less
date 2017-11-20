@@ -24,7 +24,21 @@
     background-position: left top;
     top: 50%;
     margin-top: -36px;
+    filter: Alpha(Opacity=50);/*IE7 fix*/
+    opacity: 0.5;
+    
+    &:hover, &:focus, &:active{
+      filter: Alpha(Opacity=100);/*IE7 fix*/
+      opacity: 1;
+    }
+
+    &.disabled, &.disabled:hover, &.disabled:focus, &.disabled:active {
+        filter: Alpha(Opacity=0);/*IE7 fix*/
+        opacity: 0;
+        cursor: default;
+    }
 }
+
 .owl-prev {
     left: 0;
     background-image: url("../img/icons/arrow-left.png");
@@ -34,6 +48,7 @@
     right: 0;
     background-image: url("../img/icons/arrow-right.png");
 }
+
 
 /* Styling Pagination*/
 
@@ -66,7 +81,9 @@
 }
 
 .owl-dot.active span,
-.owl-dot:hover span{
+.owl-dot:hover span,
+.owl-dot:focus span,
+.owl-dot:active span{
   filter: Alpha(Opacity=100);/*IE7 fix*/
   opacity: 1;
 }
